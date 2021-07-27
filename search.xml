@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>我的推荐</title>
+      <link href="/2021/07/27/%E6%88%91%E7%9A%84%E6%8E%A8%E8%8D%90/"/>
+      <url>/2021/07/27/%E6%88%91%E7%9A%84%E6%8E%A8%E8%8D%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MOCO的推荐"><a href="#MOCO的推荐" class="headerlink" title="MOCO的推荐"></a>MOCO的推荐</h1><p>接下来有一些好用的网站：</p><blockquote><p>来自moco</p></blockquote><hr><hr><ol><li> 捏脸网站:<blockquote><p>  <a href="https://picrew.me/image_maker/327/complete?cd=s9hY7WYMAh">Picrew</a> 好玩的二次元捏脸</p></blockquote></li></ol><ul><li><a href="https://picrew.me/image_maker/186583">①</a></li><li><a href="https://picrew.me/image_maker/327/complete?cd=s9hY7WYMAh">②</a></li></ul><ol start="2"><li><p>音乐学习:</p><blockquote><p><a href="https://learningmusic.ableton.com/zh-Hans/make-melodies/praxis.html">learning music</a> 从零开始的音乐学习</p></blockquote></li><li><p>电脑软件下载:</p><blockquote><p><a href="https://www.coolexe.com/">coolexe</a> 酷友的作品</p></blockquote></li><li><p>esp8266名片:</p><blockquote><p><a href="https://oshwhub.com/SS8-0231/esp8266-card">立创</a> 最良心的EDA之一</p></blockquote></li><li><p>豆瓣top500</p><blockquote><p>电子书<a href="https://bai.okduang.com/1860.html">点我进入</a>（用阅读打动人心）</p></blockquote></li><li><p><a href="https://www.sqlsec.com/2018/05/termux.html">termux的使用</a></p><blockquote></blockquote></li><li><p>百度文库下载</p><blockquote><p><a href="http://doc.hiwenku.com/">嗨文库</a></p></blockquote></li><li><p>Python爬虫入门：<a href="https://www.cnblogs.com/fightfordream/p/6421498.html?utm_medium=referral&utm_source=itdadao">点我进入</a></p><blockquote><p>爬取pixiv - Shadowdsp - 博客园</p></blockquote></li><li><p>ZZKIA: 诺基亚短信图片生成器<a href="https://zzkia.noddl.me:8020/?tdsourcetag=s_pctim_aiomsg">点我进入</a></p><blockquote></blockquote></li><li><p><strong>大佬的镜像站</strong><a href="http://mr.ssr0.cn:8000/">点我进入</a></p><blockquote></blockquote></li><li><p>查流行词    <a href="https://jikipedia.com/">小鸡词典</a></p></li><li><p>《我的手绘不可能这么萌！萌系手帐插画教程》<a href="http://www.yunzhan365.com/basic/1-50/37471859.html">点我进入</a></p></li><li><p>卡通的Q版头像怎么画？Q版头像画法分享！<a href="https://m.qingwk.com/article/detail-12599.html">Q版头像</a></p></li></ol><hr><h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧:"></a>小技巧:</h2><p>如何在图片内隐藏信息？<br>具体操作十分简单：</p><p>（比如你事先将账号密码保存在 123.txt 中，提前准备好了图片 aaa.jpg，并将两个文件放入了 D盘 的根目录中）</p><p>1.win + R 输入cmd 打开 命令提示符；</p><p>2.输入【D:】回车转到D盘目录下；</p><p>3.输入</p><p>【copy /b aaa.jpg + 123.txt pic.jpg】</p><p>回车，这时 D盘 根目录会生成一个jpg文件。</p><p>4.右键生成的 pic.jpg 文件，选择 用记事本打开 （或是在打开方式中选择记事本）</p><p>5.将滚动条拉至文档末尾，你会发现在一堆乱码的后面，安然存放着你的密码。</p><p>需要时用记事本打开图片查看即可。不需要时，它只是一张图片。<br>PS：</p><p>这也是为什么不能用</p><p>【copy /b 123.txt + aaa.jpg pic.jpg】</p><p>的原因，这个指令只是将两个文件拼接起来，如果用上述指令，你会发现图片无法正常打开，而用记事本查看密码信息是位于最前面的。</p><p>一个完整的 jpg 文件由FF D8开头，FF D9结尾，图片浏览器会以FF D8开始读取，而忽略FF D9以后的内容，因此可以在 jpg 文件结尾后中加入其他文件，但如果开头改变，图片就无法正常打开了。</p><p>本次内容到这里就结束了。</p><p>确实很简单，大家应该都学会了吧。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/07/26/hello-world/"/>
       <url>/2021/07/26/hello-world/</url>
