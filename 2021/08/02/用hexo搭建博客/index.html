@@ -1,0 +1,1113 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="用hexo搭建博客, 莫可的窝">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>用hexo搭建博客 | 莫可的窝</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">莫可的窝</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">莫可的窝</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">用hexo搭建博客</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                <span class="chip bg-color">技术</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-08-02
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.2k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>前言<br /><br>2019年11月CSP Day1当晚，发现身边大佬都在写游记，我也因此心血来潮，咕咕咕，几天之后我才开始写。同时又碰巧学长退役，看见了巨佬的博客，我的天哪，这完善程度，这流畅度，这内容的深度<!--break-->，不愧是巨佬，厚着脸皮求教程，要来一个链接，在教程的帮助下，折腾了好久终于有了自己的博客。现在距离建站已经过去了差不多3,4个月，博客越来越完善了<br /><br><br /><br>故写下此教程，记录搭建过程和自己踩过的坑<br /><br><br /><br>介绍<br /><br>Hexo <a class="feed-link-url" href="https://hexo.io/zh-cn/" title="https://hexo.io/zh-cn/" target="_blank" rel="nofollow">查看链接</a> 是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub或Coding上，是搭建博客的首选框架。这里我们选用的是GitHub <a class="feed-link-url" href="https://github.com/" title="https://github.com/" target="_blank" rel="nofollow">查看链接</a> ，你没看错，全球最大的同性恋交友网站。Hexo同时也是GitHub上的开源项目，参见： <a class="feed-link-url" href="https://github.com/hexojs/hexo" title="https://github.com/hexojs/hexo" target="_blank" rel="nofollow">查看链接</a> 如果想要更加全面的了解Hexo，可以到其官网 <a class="feed-link-url" href="https://hexo.io/zh-cn/" title="https://hexo.io/zh-cn/" target="_blank" rel="nofollow">查看链接</a> 了解更多的细节，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。<br /><br><br /><br>前面说过Hexo是一个静态博客框架，基于Node.js，它将Markdown文章通过渲染引擎，在几秒内，即可利用靓丽的主题生成静态网页，再结合Git命令进行部署。这使其成为一个快速、简洁且高效的博客框架。<br /><br><br /><br>(前面都在扯淡)<br /><br><br /></p>
+<p>在Github创建仓库<br /><br>登录GitHub <a class="feed-link-url" href="https://github.com/" title="https://github.com/" target="_blank" rel="nofollow">查看链接</a> ，如果没有GitHub帐号，使用你的邮箱注册注册<br /><br><br /><br>点击GitHub中的右上角的 + 创建新仓库（new repository），仓库名应该为<!--break-->：yourname.github.io 这里的yourname使用你的GitHub帐号名称代替，这是固定写法 （文章接下来出现的yourname皆为你的GitHub账号名）注意xxxx with a README要记得勾选</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_168aac9c_4664_8518@1920x1029.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">安装所需软件并连接GitHub<br /><br>安装Git</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_b4747911_4664_852@220x92.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。<br /><br><br /><br>在官网 <a class="feed-link-url" href="https://git-scm.com/" title="https://git-scm.com/" target="_blank" rel="nofollow">查看链接</a> 下载安装<!--break-->，安装时一路继续就好了。<br /><br><br /><br>安装完成后在命令行内输入 git 查看是否成功<br /><br>若提示 ‘git’是内部或外部命令，也不是可运行的程序或批处理文件。 就说明失败了。<br /><br><br /><br>安装Node.js<br /><br>Hexo基于Node.js，Node官网地址： <a class="feed-link-url" href="https://nodejs.org/zh-cn/" title="https://nodejs.org/zh-cn/" target="_blank" rel="nofollow">查看链接</a> 在官网下载安装包，注意安装Node.js会包含环境变量及npm的安装 <br /><br>安装后检测Node.js和npm是否安装成功，在命令行中输入 node -v 和 npm -v :<br /><br>（显示版本号即安装成功）</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_81604776_4664_8523@232x104.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">连接GitHub<br /><br>成功安装后在桌面右键点击 Git Bash Here</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_334a0b57_4664_8525@276x459.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">设置user.name和user.email配置信息，<br /><br>在弹出界面中输入以下内容<br /><br><br /><br>git config –global user.name &quot;你的GitHub用户名&quot;<br /><br>git config –global user.email &quot;你的GitHub注册邮箱&quot;</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_ccf83e1f_4664_8527@1112x402.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">然后创建 SSH <br /><br>输入以下内容<br /><br><br /><br>ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_403b8eea_4664_8529@1112x364.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">然后直接三个回车即可，即不设置密码<br /><br><br /><br>然后在 C:\Users\Username.ssh 路径下找到名为 id_rsa.pub 的文件，就是你刚刚创建的密钥，右键用记事本打开然后复制全部内容<br /><br><br /><br>然后进入GitHub添加密钥</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_4226b944_4664_853@1920x1029.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">将复制的内容粘贴至Key中，title随便填然后点击 Add SSH key</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_1314a186_4668_6006@1920x1029.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">在Git Bash中检测GitHub公钥设置是否成功<br /><br>bash中输入下面这一行内容<br /><br><br /><br>ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#109;</a></p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_f07c2d59_4668_6009@1112x364.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">当出现 <br /><br>Hi,yourname! You&#039;ve successfully……</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_1481ddbc_4668_6011@1112x402.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">则已经成功<br /><br>这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了 省去每次输入密码的步骤<!--break--> ，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。<br /><br><br /><br>安装Hexo<br /><br>Hexo就是我们的个人博客网站的框架，我们需要在电脑里创建一个文件夹（称之为博客根目录），用来存放Hexo的相关文件以及博客文章，文件夹名字随意（建议不要出现中文），我文件夹名字为 Hexo-Blog 。创建好后，进入文件夹中，右键进入 Git Bash Here <br /><br>（注意，之后有关操作都需要在博客根目录进入 Git Bash Here ）<br /><br>输入以下内容<br /><br><br /><br>npm install -g hexo-cli</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_d743f009_4668_6013@1112x364.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">初始化博客：<br /><br>输入以下内容<br /><br><br /><br>hexo init</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_7f7f8849_4668_6016@1112x364.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">文件夹中大致如下</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_e52e1022_4668_6018@1112x622.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">1. node_modules 是 node.js 各种库的目录，<br /><br>2. public 是生成的网页文件目录（一开始可能没有）<br /><br>3. scaffolds 里面就三个文件，存储着新文章和新页面的初始设置<br /><br>4. source 是我们最常用到的一个目录<!--break-->，里面存放着文章、各类页面、图像等文件<br /><br>5. themes 存放着主题文件<br /><br>6. _config.yml 站点配置文件<br /><br>  <br /><br>  本地预览<br /><br>  按顺序输入以下两条命令：<br /><br>  <br /><br>  hexo generate<br /><br>  hexo server</p><br>                               <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>               <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_25c3dabb_4668_602@1112x402.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>           </div><br>                                           <p style="font-size: 16px;color: #212121;margin: 10px 0;">Hexo命令后面会作介绍，完成后，会看到</p><br>                               <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>               <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_c6b44696_4668_6021@1112x438.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>           </div><br>                                           <p style="font-size: 16px;color: #212121;margin: 10px 0;">Hexo正在 <a class="feed-link-url" href="http://localhost:4000" title="http://localhost:4000" target="_blank" rel="nofollow">查看链接</a> 运行，按Ctrl+C可停止<br /><br>  <br /><br>  可以按住Ctrl用鼠标直接点链接，也可以在浏览器输入 <a class="feed-link-url" href="http://localhost:4000" title="http://localhost:4000" target="_blank" rel="nofollow">查看链接</a> 就可以看到你生成的博客了</p><br>                               <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>               <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_dd0e0398_4668_6023@1920x1029.jpeg.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>           </div><br>                                           <p style="font-size: 16px;color: #212121;margin: 10px 0;">但是目前只能本地预览，所以还需部署到GitHub<br /><br>  <br /><br>  将hexo部署到GitHub<br /><br>  我们需要将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml（博客根目录中）<!--break-->，划到最后,将deploy中的内容修改成下面的样子（yourname改成你GitHub的用户名）<br /><br>  <br /><br>  deploy:<br /><br>  type: git<br /><br>  repo: <a class="feed-link-url" href="https://github.com/yourname/yourname.github.io.git" title="https://github.com/yourname/yourname.github.io.git" target="_blank" rel="nofollow">查看链接</a> <br /><br>  branch: master<br /><br>  （repository冒号后面只有一个空格哦）</p><br>                               <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>               <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_8e1ef1f3_4671_5697@1112x586.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>           </div><br>                                           <p style="font-size: 16px;color: #212121;margin: 10px 0;">然后我们还需要安装部署所需插件 deploy-git <br /><br>  bash中输入<br /><br>  <br /><br>  npm install hexo-deployer-git –save</p><br>                               <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>               <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_ad611ac1_4671_5699@1112x364.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>           </div><br>                                           <p style="font-size: 16px;color: #212121;margin: 10px 0;">然后按顺序输入以下三条命令<br /><br>  <br /><br>  hexo clean<br /><br>  hexo generate<br /><br>  hexo deploy</p><br>                               <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>               <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_73a83842_4671_5701@1112x438.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>           </div><br>                                           <p style="font-size: 16px;color: #212121;margin: 10px 0;">全部完成后，恭喜，你的博客已经搭建完成，当然，只是一个雏形<br /><br>  <br /><br>  博客地址为 <a class="feed-link-url" href="http://yourname.github.io" title="http://yourname.github.io" target="_blank" rel="nofollow">查看链接</a> （yourname改成你GitHub的用户名）<br /><br>  <br /><br>  Hexo命令<br /><br>  下面会介绍常用的Hexo命令（若有 ==&gt; 则右边为简写）<br /><br>  1<!--break-->. npm install hexo -g #安装Hexo<br /><br>7. npm update hexo -g #升级<br /><br>8. hexo init #初始化博客<br /><br>9. hexo new &quot;mypost&quot; ==&gt; hexo n &quot;mypost&quot; #新建文章（在 /source/_posts 文件夹中创建 mypost.md 文件）<br /><br>10. hexo generate ==&gt; hexo g #生成页面(页面在public文件夹中)<br /><br>11. hexo server ==&gt; hexo s #本地预览<br /><br>12. hexo deploy ==&gt; hexo d #部署<br /><br>13. hexo clean #清除缓存<br /><br>14. hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br /><br>15. hexo server -s #静态模式<br /><br>16. hexo server -p 5000 #更改端口<br /><br>17. hexo server -i 192.168.1.1 #自定义 IP<br /><br>    <br /><br>    配置修改后需 hexo g 重新生成界面， hexo s 本地预览过程中若对某些配置文件（好像主题配置文件可以）修改，可直接刷新本地预览页面，按Ctrl+C可停止本地预览<br /><br>    <br /><br>    命令之间可用 &amp;&amp; 相连接<br /><br>    如 hexo g &amp;&amp; hexo s 和 hexo g &amp;&amp; hexo d 等等<br /><br>    当然 对于上面两种常用的命令，hexo提供了简写 hexo s -g （生成界面并本地预览） 和 hexo g -d （生成界面并部署）<br /><br>    <br /><br>    对博客修改之后只有进行了部署才会发布到网上<br /><br>    <br /><br>    完善配置文件 _config.yml <br /><br>    只提供主要配置的中文<br /><br>    按 Ctrl+F 可进行搜索<br /><br>    (#后为注释)<br /><br>    <br /><br>    首先修改网站基本信息<br /><br>    <br /></p>
+<h1 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site<br /></h1><p>title: # 网站标题<br /><br>subtitle: &#039;&#039;<br /><br>description: # 网站描述<br /><br>keywords: # 网站关键词<br /><br>author: # 博客作者名字<br /><br>language: zh-CN # 语言<br /><br>timezone: &#039;&#039;&quot;</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_8a760272_4671_5703@1112x622.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">将链接改为你博客域名（yourname.github.io）<br /><br>yml<br /><br>url: <a class="feed-link-url" href="http://yoursite.com" title="http://yoursite.com" target="_blank" rel="nofollow">查看链接</a></p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_f265af5d_4671_5705@1112x476.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">你博客文章的地址，默认为 yourname.github.io/year/mouth/day/title<br /><br>，可自行修改<br /><br>例如你的一篇文章叫post，如果按照默认设置则文章地址是 xxxxxxx/2020/02/10/post<!--break--><br /><br>如果是我图片上的设置则地址是 xxxxxxx/2020/post<br /><br><br /><br>permalink: :year/:month/:day/:title/</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_8158ee13_4671_5706@1112x402.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">每页的文章数量<br /><br><br /><br>per_page: 10</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_2b1d2935_4671_5708@1112x476.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">你选择的主题，默认即为 landscape ，接下来会介绍<br /><br><br /><br>theme: landscape</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_ed6575f4_4671_571@1112x476.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">文章编写<br /><br>初识Markdown<br /><br>Hexo文章使用markdown语法<br /><br>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br /><br>Markdown具有一系列衍生版本<!--break-->，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。<br /><br>Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。世界上最流行的博客平台WordPress和大型CMS如Joomla、Drupal都能很好的支持Markdown。<br /><br><br /><br>推荐一个Markdown教程： <a class="feed-link-url" href="https://segmentfault.com/markdown" title="https://segmentfault.com/markdown" target="_blank" rel="nofollow">查看链接</a><br /><br><br /><br>初始化的时候，已经自动帮我们创建了一个名为 hello-world.md 的文件 .md 即为markdown文章的后缀名</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_2049bdca_4673_9097@1092x2168.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                            <p style="color: #BDBDBD;font-size: 14px;text-align: center;margin-top: -12px;">hello-world.md</p><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">两个 — 中间的部分我们称之为 Front-matter ，可以当做是文章的属性，该部分来自 \scaffolds\post.md ,这个md文件中放着一份模板，之后用 hexo n “xxx” 命令新建的文件的 Front-matter 都来自这，我们可以自己修改该文件。</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_bcda4aad_4673_9099@1112x660.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">title标题，date建立日期，updated更新日期（这个我也去掉了），tags标签，categories分类（我自己去掉了这个），还有mathjax 支持LaTeX数学公式和comment支持文章评论，这些是要装插件才能用的<!--break--><br /><br><br /><br>除了使用命令新建文章还可以自己在 _post 文件夹中创建 .md 文件，需要注意的是，使用命令创建的文章会自动帮我们写好 Front-matter ，而手动创建的需要我们自己写。<br /><br><br /><br>图床<br /><br>图床一般是指储存图片的服务器，就是专门用来存放图片，同时允许你把图片对外连接的网上空间，不少图床都是免费的。<br /><br>就是将图片传到网站上，然后在写文章时通过该网站提供的图片链接插入图片，markdown教程中应该会提到<br /><br><br /><br>主题<br /><br>可访问hexo主题商店 <a class="feed-link-url" href="https://hexo.io/themes/" title="https://hexo.io/themes/" target="_blank" rel="nofollow">查看链接</a> 挑选喜欢的主题<br /><br>，接下来的演示采用 NexT主题 <a class="feed-link-url" href="https://github.com/theme-next/hexo-theme-next" title="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="nofollow">查看链接</a><br /><br><br /><br>安装主题<br /><br>不同主题不同方式，可以查看对应主题网站<br /><br>bash中输入以下内容（别换行输）<br /><br>git clone <a class="feed-link-url" href="https://github.com/theme-next/hexo-theme-next" title="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="nofollow">查看链接</a> themes/next</p><br>                                <div class="message-image-item" style="width: 100%;margin: 10px 0;"><br>                <img class="message-image" src="http://image.coolapk.com/feed/2020/0212/21/2335206_f63f79f5_4673_91@1112x402.png.m.jpg" alt="" style="width: 100%;border: 1px solid #e6e6e6;border-radius: 2px;"><br>            </div><br>                                            <p style="font-size: 16px;color: #212121;margin: 10px 0;">此时 /themes 下多了一个 next 文件夹，该文件夹内存放该主题文件<br /><br>你会发现文件夹中也有一个 _config.yml ，我们称之为 主题配置文件 。另一个是 站点配置文件 。这个 主题配置文件 以后再讲 <br /><br>安装完成之后在 站点配置文件 中更改主题即可<br /><br><br /><br>结束<!--break--><br /><br>至此博客已经基本搭建完成，关于主题配置的详细内容下篇文章再写。 <br /><br>接下来还会写 绑定自已域名，Github+Coding国内外双线部署，主题美化，网站SEO，搭建自己的图床等内容，虽然很多我自己带还没搞，不过已经在计划之中了，已经买好了域名，不过由于手机号是虚拟号段原因还没发使用，得等到疫情结束（加油）办张新卡再开始搞，域名绑定完就搞双线部署和百度等搜索引擎的SEO，希望不要咕咕咕咕咕咕咕<br /><br><br /><br>话说酷安啥时候支持markdown啊<img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_57_dogehechi.png" alt="doge呵斥"/><img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_57_dogehechi.png" alt="doge呵斥"/><img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_57_dogehechi.png" alt="doge呵斥"/><br /><br><br /><br>博客有人互加友链吗<img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_101_pyjiaoyi.png" alt="py交易"/><img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_101_pyjiaoyi.png" alt="py交易"/><img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_101_pyjiaoyi.png" alt="py交易"/><img class="feed-emoji" src="http://static.coolapk.com/emoticons/v9/coolapk_emotion_101_pyjiaoyi.png" alt="py交易"/><br /><br><br /><br>最后上长图，第一个是黑底的夜间模式&lt;img class=”feed-emoj</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">moco</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://massanmzc.github.io/2021/08/02/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">http://massanmzc.github.io/2021/08/02/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">moco</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                    <span class="chip bg-color">技术</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/08/02/esp8266%E4%BD%BF%E7%94%A8/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="esp8266使用">
+                        
+                        <span class="card-title">esp8266使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            moco
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                        <span class="chip bg-color">技术</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/08/02/%E6%9D%82%E5%9B%BE%E6%8E%A8%E8%8D%90/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="杂图推荐">
+                        
+                        <span class="card-title">杂图推荐</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            moco
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="song"
+                   id="1915274713"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">moco</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+    <a href="mailto:1125209047@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1125209047" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1125209047" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+        <script src="//code.tidio.co/gvdqnoewmrunwl5z7qwbnqsenpbwxort.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
